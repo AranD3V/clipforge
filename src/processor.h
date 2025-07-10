@@ -21,10 +21,10 @@ inline void processorMedia(const CLIAtgs& args) {
 
     cmd += "\"" + args.output + "\"";
 
-    std::cout << "Executing command:\n" << cmd << "\n";
+    cout << "Executing command:\n" << cmd << "\n";
 
-    int result = std::system(cmd.c_str());
+    int result = system(cmd.c_str());
     if (result != 0) {
-        std::cerr << "FFmpeg command failed with code: " << result << "\n";
+        cerr << "FFmpeg command failed with code: " << result << "\n";
     }
 }
