@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\adity\OneDrive\Desktop\Projects\ClipForge\build\CMakeFiles\caa790bad75fa3d9f9da7649800fdaf5\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D264CF2B-7901-31EA-85DD-D78D7AE70968}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

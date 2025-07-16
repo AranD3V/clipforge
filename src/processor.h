@@ -1,12 +1,11 @@
 #pragma once
-#include <string>
-#include <cstdlib>
-#include <iostream>
 #include "cli_parser.h"
-using namespace std;
+#include <iostream>
+#include <cstdlib>
 
-inline void processorMedia(const CLIAtgs& args) {
-	string cmd = "ffmpeg -y -i \"" + args.input + "\" ";
+inline void processMedia(const CLIArgs& args) {
+    std::string cmd = "ffmpeg -y -i \"" + args.input + "\" ";
+
     if (!args.resize.empty())
         cmd += "-vf scale=" + args.resize + " ";
 
@@ -21,10 +20,10 @@ inline void processorMedia(const CLIAtgs& args) {
 
     cmd += "\"" + args.output + "\"";
 
-    cout << "Executing command:\n" << cmd << "\n";
+    std::cout << "Executing command:\n" << cmd << std::endl;
 
-    int result = system(cmd.c_str());
+    int result = std::system(cmd.c_str());
     if (result != 0) {
-        cerr << "FFmpeg command failed with code: " << result << "\n";
+        std::cerr << "FFmpeg command failed with code: " << result << std::endl;
     }
 }

@@ -9,7 +9,7 @@ if (MSVC)
 endif()
 
 # Source files
-add_executable(MediaTool
+add_executable(ClipForge
     src/main.cpp
     src/cli_parser.h
     src/processor.h
