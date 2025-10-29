@@ -22,4 +22,5 @@ It auto-generates the correct FFmpeg commands based on your input.
 
 ```bash
 ClipForge.exe --input "../../input.mp4" --output "resized.mp4" --resize 1280x720 --bitrate 2M
+```
 <img width="1038" height="749" alt="diagram-export-10-29-2025-9_00_08-AM 1" src="https://github.com/user-attachments/assets/5a2c07f3-2042-4d38-b552-aa60bde8f918" />
